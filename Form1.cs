@@ -21,7 +21,6 @@ namespace Buoi07_TinhToan3
         {
             txtSo1.Text = txtSo2.Text = "0";
 
-            // Thêm event cho các TextBox
             txtSo1.Enter += TextBox_Enter;
             txtSo2.Enter += TextBox_Enter;
             txtKq.Enter += TextBox_Enter;
@@ -31,13 +30,13 @@ namespace Buoi07_TinhToan3
             txtKq.MouseDown += TextBox_MouseDown;
         }
 
-        // Khi focus bằng Tab => bôi đen
+        // Tab
         private void TextBox_Enter(object sender, EventArgs e)
         {
             (sender as TextBox)?.SelectAll();
         }
 
-        // Khi click chuột => dùng BeginInvoke để delay
+        // CLick mouse
         private void TextBox_MouseDown(object sender, MouseEventArgs e)
         {
             TextBox tb = sender as TextBox;
@@ -60,7 +59,7 @@ namespace Buoi07_TinhToan3
         {
             //lấy giá trị của 2 ô số
             double so1, so2, kq = 0;
-            // Kiểm tra rỗng cho ô số 1
+
             if (string.IsNullOrWhiteSpace(txtSo1.Text))
             {
                 MessageBox.Show("Ô thứ nhất đang để trống. Vui lòng nhập số!",
@@ -69,7 +68,6 @@ namespace Buoi07_TinhToan3
                 return;
             }
 
-            // Kiểm tra rỗng cho ô số 2
             if (string.IsNullOrWhiteSpace(txtSo2.Text))
             {
                 MessageBox.Show("Ô thứ hai đang để trống. Vui lòng nhập số!",
@@ -78,7 +76,6 @@ namespace Buoi07_TinhToan3
                 return;
             }
 
-            // Kiểm tra dữ liệu có phải số hợp lệ
             if (!double.TryParse(txtSo1.Text, out so1))
             {
                 MessageBox.Show("Giá trị ô thứ nhất không hợp lệ. Vui lòng nhập số!",
@@ -95,7 +92,6 @@ namespace Buoi07_TinhToan3
                 return;
             }
 
-            // Kiểm tra xem người dùng đã chọn phép tính chưa
             if (!radCong.Checked && !radTru.Checked && !radNhan.Checked && !radChia.Checked)
             {
                 MessageBox.Show("Vui lòng chọn phép tính trước khi thực hiện!",
