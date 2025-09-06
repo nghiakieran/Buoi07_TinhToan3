@@ -20,7 +20,31 @@ namespace Buoi07_TinhToan3
         private void Form1_Load(object sender, EventArgs e)
         {
             txtSo1.Text = txtSo2.Text = "0";
-            radCong.Checked = true;             //đầu tiên chọn phép cộng
+
+            // Thêm event cho các TextBox
+            txtSo1.Enter += TextBox_Enter;
+            txtSo2.Enter += TextBox_Enter;
+            txtKq.Enter += TextBox_Enter;
+
+            txtSo1.MouseDown += TextBox_MouseDown;
+            txtSo2.MouseDown += TextBox_MouseDown;
+            txtKq.MouseDown += TextBox_MouseDown;
+        }
+
+        // Khi focus bằng Tab => bôi đen
+        private void TextBox_Enter(object sender, EventArgs e)
+        {
+            (sender as TextBox)?.SelectAll();
+        }
+
+        // Khi click chuột => dùng BeginInvoke để delay
+        private void TextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            TextBox tb = sender as TextBox;
+            if (tb != null)
+            {
+                this.BeginInvoke((Action)(() => tb.SelectAll()));
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -70,6 +94,15 @@ namespace Buoi07_TinhToan3
                 txtSo2.Focus();
                 return;
             }
+
+            // Kiểm tra xem người dùng đã chọn phép tính chưa
+            if (!radCong.Checked && !radTru.Checked && !radNhan.Checked && !radChia.Checked)
+            {
+                MessageBox.Show("Vui lòng chọn phép tính trước khi thực hiện!",
+                                "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             //Thực hiện phép tính dựa vào phép toán được chọn
             if (radCong.Checked) kq = so1 + so2;
             else if (radTru.Checked) kq = so1 - so2;
