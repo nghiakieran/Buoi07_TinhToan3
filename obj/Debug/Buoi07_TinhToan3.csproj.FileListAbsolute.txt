@@ -16,3 +16,13 @@ F:\18-19 HKII\18610SP\Kiem thu PM\Bai tap\BT4b\Buoi07_TinhToan3\obj\Debug\Buoi07
 F:\18-19 HKII\18610SP\Kiem thu PM\Bai tap\BT4b\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.Form1.resources
 F:\18-19 HKII\18610SP\Kiem thu PM\Bai tap\BT4b\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.Properties.Resources.resources
 F:\18-19 HKII\18610SP\Kiem thu PM\Bai tap\BT4b\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.GenerateResource.Cache
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\bin\Debug\Buoi07_TinhToan3.exe.config
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\bin\Debug\Buoi07_TinhToan3.exe
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\bin\Debug\Buoi07_TinhToan3.pdb
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.AssemblyReference.cache
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.Form1.resources
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.Properties.Resources.resources
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.exe
+C:\Users\ACER\Desktop\Buoi07_TinhToan3\obj\Debug\Buoi07_TinhToan3.pdb
